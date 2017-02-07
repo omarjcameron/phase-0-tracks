@@ -17,3 +17,7 @@
 #personal-objective:hover {
  	transform: scale(1.1);
 }
+
+section > h3 {
+	color: blue;
+}
