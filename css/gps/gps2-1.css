@@ -1,6 +1,54 @@
-body {
-  background-color: blue;
+.column-1 {
+  background-color: #d9d9d9;
+  float: left;
+  display: inline-block;
+  width: 50%;
+  padding: 0px 0px 20px 0px;
 }
 
-/* This is a just a test to make sure the linked CSS file is working */
+.column-2 {
+  background-color: #d9d9d9;
+  float: left;
+  display: inline-block;
+  width: 50%;
+  padding: 0px 0px 60px 0px;
+}
 
+header h1 {
+  background-color: #0099ff;
+  background: linear-gradient(#0099ff, #d9d9d9); 
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0px;
+  overflow: auto;
+  text-align: center;
+}
+
+header p {
+  background-color: #b3b3b3;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+body {
+  position: relative;
+  /* margin: 0 auto; */
+}
+
+h2 {
+  font-family: Georgia;
+  font-size: 1em;
+}
+
+footer {
+  background-color: #0099ff;
+  text-align: center; 
+  margin: 0px auto;
+}
