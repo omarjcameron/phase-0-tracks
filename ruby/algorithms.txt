@@ -1,0 +1,41 @@
+How to Ride an Elevator
+- Walk into elevator
+- Locate Control Panel Which Contains List of Buttons Pertaining to Destinations
+	- If you desired destination is first floor
+	  Press Button Labeled 01
+	elsif
+	- If you desired destination is the second floor
+	 Press Button Labeled 02 
+	elsif
+	- If you are headed to third floor
+	Press Button Labeled 03
+	etc…
+	etc…
+	- If you are headed to fifteenth floor
+	Press Button Labeled 15
+	end
+- Wait until elevator travels to desired floor
+- If you arrive at desired floor and door fails to open
+	- Press “door open” button
+	- Else
+	- Proceed through open door to your destination. 
+
+How To Do The Laundry
+- Locate Clothing Bin Containing Dirty Clothes
+- Def(sort)
+	- If clothing is white
+	- put in white pile
+	elsie
+	- if clothing is light colored
+	- put in lights pile
+	elsif
+	- put in dark pile
+- Put White Pile in Washer
+- Remove White Pile from Washer and put in Dryer
+- Put Dark Pile in Washer 
+- Remove Dark Pile from Washer and put in Dryer
+- Put Light Pile in Washer 
+- Remove Light Pile from Washer and put in Dryer
+- Fold Clothes from All piles. 
+	
+
