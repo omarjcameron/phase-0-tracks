@@ -9,17 +9,17 @@ def encrypt(password)
 	while i < password.length
   		if password[i] == "z"
   		password[i] = "a"
-    	encrypted_password = password[i] + encrypted_password 
+    	encrypted_password = encrypted_password + password[i]
 	
 		i += 1
 		else
 
-		encrypted_password = password[i].next + encrypted_password 
+		encrypted_password = encrypted_password + password[i].next
 		i += 1
 		end
 	end
 
-   p encrypted_password.reverse
+   p encrypted_password
 end
 
 # puts encrypt("zaebq")
