@@ -59,6 +59,7 @@ end
     p password
   end
 
+
   # puts decrypt(encrypt("swordfish"))
 
   # This method works because you are running the first method first and then you're are decrypting it. 
