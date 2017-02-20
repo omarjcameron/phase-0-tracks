@@ -11,12 +11,16 @@ def encrypt(password)
   		password[i] = "a"
     	encrypted_password = encrypted_password + password[i]
 	
-		i += 1
-		else
+		  i += 1
+      elsif password[i] == " "
+      password[i] = " "
+      encrypted_password =  encrypted_password + password[i]    
+      i += 1
 
-		encrypted_password = encrypted_password + password[i].next
-		i += 1
-		end
+      else
+      encrypted_password = encrypted_password + password[i].next
+		  i += 1
+		  end
 	end
 
    p encrypted_password
