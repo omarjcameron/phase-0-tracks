@@ -36,6 +36,12 @@ p " suspects".insert(0, "the usual")
 # => "The case of the disappearing last lette"
 p "The case of the disappearing last letter".chop
 
+"The mystery of the missing first letter".slice(1..-1)
+# => "he mystery of the missing first letter" 
+p "The mystery of the missing first letter".slice(1..-1)
+
+#You could also do it using a variable.
+
 first_missing_letter = "The mystery of the missing first letter"
 # => "he mystery of the missing first letter"
 first_missing_letter.slice!(0)
