@@ -54,3 +54,31 @@ end
 
 puts "Hash After .map Method:"
 p new_hockey
+
+
+
+foods = ["Pizza", "Steak", "Veggies", "Tacos", "Fruits"]
+drinks = { "Beer" => 7, "Wine"  => 10, "Liquor" => 40}
+
+puts "Original Array"
+p foods
+
+p foods.delete_if {|type_of_food| type_of_food.length > 5}
+
+p foods.keep_if {|type_of_food| type_of_food == "Pizza"}
+
+p foods.select {|type_of_food| type_of_food == "Steak"}
+
+p foods.drop_while {|type_of_food| type_of_food.length <= 5}
+
+
+puts "Original Hash"
+p drinks
+
+p drinks.delete_if {|types, percentage| types == "Wine"}
+
+p drinks.keep_if {|types, percentage| types.length > 4}
+
+p drinks.select {|types, percentage| types == "Liquor"}
+
+p drinks.drop_while {|types, percentage| types.length <= 5}
