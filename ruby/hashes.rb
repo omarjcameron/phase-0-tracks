@@ -23,8 +23,14 @@ client_intake[:decor_theme] = gets.chomp
 puts "What type of residence does the client reside in?"
 client_intake[:residence_type] = gets.chomp
 
-puts "Does the client have pets? (True/False)"
-client_intake[:pets] = gets.chomp
+puts "Does the client have pets? (yes/no)"
+reply = gets.chomp
+if reply == "yes"
+	pet_owner = "true"
+else
+	pet_owner = "false"
+end
+client_intake[:pets] = pet_owner
 
 puts "What type of music does the client like?"
 client_intake[:fave_music] = gets.chomp
@@ -75,8 +81,13 @@ puts "What type of residence does the client reside in?"
 home_type = gets.chomp
 client_form[:residence_type] = home_type
 
-puts "Does the client have pets? (True/False)"
-has_pets = gets.chomp
+puts "Does the client have pets? (yes/no)"
+pets = gets.chomp
+  if pets == "yes"
+    has_pets = "true"
+  else
+  	has_pets = "false"
+  end
 client_form[:pets] = has_pets
 
 puts "What type of music does the client like?"
