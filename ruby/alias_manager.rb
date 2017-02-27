@@ -49,18 +49,24 @@ while i < original_name.length
    i += 1
    end
  end
- holder_name = new_name.capitalize
- array_name = holder_name.split.reverse!
- int_name = array_name.join(" ")
- code_name = int_name.capitalize
+ holder_name = new_name.split.reverse
+ code_name = holder_name.map(&:capitalize).join(' ')
  p code_name
 end
 
-puts secret_alias("Felicia Torres")
+# puts secret_alias("Felicia Torres")
 
 
-# while i <= segmented_name.length
-#	segmented_name[i] = segmented_name[i].next
-#i += 1
-#   end
-# end
+puts "Please enter a name(s) you'd like to 'spy-ify'. Type 'quit' when done."
+input = gets.chomp.downcase
+
+while input != "quit"
+secret_alias(input)
+p "Another name? 'quit' if done."
+input = gets.chomp
+end
+
+p "Great thats enogh for today!"
+
+
+
