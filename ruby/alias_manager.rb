@@ -3,7 +3,7 @@
 # I'll have to hard code a number of characters. I can think of a way to easily solve the vowel conundrum, but may have to handle a few consonants as one off. 
 # Then I want to split the string and create an array, which I'll then reverse
 # That should be the name
-
+# As a heads up - I do realize that this is very long. I wanted to just use an enumerable but was encountering major difficulties, upon doing so. Thus, to get this done, I went with a very long while loop (that does work!) but it's clearly not the type of succinct code that I'd like to write. 
 
 
 
@@ -51,7 +51,7 @@ while i < original_name.length
  end
  holder_name = new_name.split.reverse
  code_name = holder_name.map(&:capitalize).join(' ')
- p code_name
+ return code_name
 end
 
 # puts secret_alias("Felicia Torres")
@@ -60,13 +60,15 @@ end
 puts "Please enter a name(s) you'd like to 'spy-ify'. Type 'quit' when done."
 input = gets.chomp.downcase
 
+array = []
 while input != "quit"
-secret_alias(input)
+array << secret_alias(input)
 p "Another name? 'quit' if done."
 input = gets.chomp
 end
 
-p "Great thats enogh for today!"
+p "You've entered these name #{array}"
+p "Great thats enough for today!"
 
 
 
