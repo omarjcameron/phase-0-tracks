@@ -3,7 +3,7 @@
 # I'll have to hard code a number of characters. I can think of a way to easily solve the vowel conundrum, but may have to handle a few consonants as one off. 
 # Then I want to split the string and create an array, which I'll then reverse
 # That should be the name
-# As a heads up - I do realize that this is very long. I wanted to just use an enumerable but was encountering major difficulties, upon doing so. Thus, to get this done, I went with a very long while loop (that does work!) but it's clearly not the type of succinct code that I'd like to write. 
+# As a heads up - I do realize that this is very long. I wanted to just use an enumerable but was encountering major difficulties, upon doing so. Thus, to get this done, I went with a very long while loop (that does work!) but it's clearly not the type of succinct code that I'd like to write. When I finally got to a workable emumerable solution - I updated the code with that solution and included it below my original solution.
 
 
 
@@ -69,6 +69,42 @@ end
 
 p "You've entered these name #{array}"
 p "Great thats enough for today!"
+
+
+# This starts the second program which uses an enumerator 
+
+
+def next_letter(name)
+  vowels = ["a", "e", "i", "o", "u", "a"]
+  cons = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z", "b"]
+  name_array = name.downcase.split("")
+  name_array.each_with_index do |letter, index|
+    if vowels.include?(letter)
+      name_array[index] = vowels[vowels.index(letter) + 1]
+    elsif cons.include?(letter)
+      name_array[index] = cons[cons.index(letter) + 1]
+    end
+  end
+  new_name = name_array.join
+  output = new_name.split.each { |name| name.capitalize! }.reverse.join(" ")
+ p output
+end
+
+
+
+puts "Please enter a name(s) you'd like to 'spy-ify'. Type 'quit' when done."
+input = gets.chomp.downcase
+
+array = []
+while input != "quit"
+array << next_letter(input)
+p "Another name? 'quit' if done."
+input = gets.chomp
+end
+
+p "You've entered these name #{array}"
+p "Great thats enough for today!"
+
 
 
 
