@@ -20,6 +20,10 @@ n.times {puts "Woff"}
   def sit
   	"*sits down*"
   end
+
+  def initialize
+   p "Initialzing new puppy instance ..."
+  end
 end
 
 
