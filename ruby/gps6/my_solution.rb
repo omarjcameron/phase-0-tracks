@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [with: Jarrade Pierce].
+# We spent [1.5] hours on this challenge.
 
 # EXPLANATION OF require_relative
 # Relative means a path relative to the file you are trying to pull in 
