@@ -58,18 +58,21 @@ function Car(year, make, model, isPopular) {
 
  this.allwheeldrive = function() { console.log("Vroom!"); };
 
-this.horsepower = function(num) { console.log ("This car's horsepower is " + num + "hp.");};
+this.horsepower = function(num) { return "This car's horsepower is " + num + "hp."};
 
  console.log("CAR INITIALIZATION COMPLETE");
 }
 
-console.log("Let's build a car ...");
+// console.log("Let's build a car ...");
+
 var newCar = new Car(2017, "Tesla", "Model T", true);
-console.log(newCar);
-console.log("Our car has all wheel drive:");
-newCar.allwheeldrive();
-newCar.horsepower(300);
-console.log("-------");
+// console.log(newCar);
+// console.log("Our car has all wheel drive:");
+// newCar.allwheeldrive();
+
+console.log(newCar.horsepower(300));
+
+// console.log("-------");
 
 // Attempt to add to object outside of the constructor function! It works! 
 console.log(newCar.used = false);
